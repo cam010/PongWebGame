@@ -1,0 +1,59 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.447);
+    margin: 0px;
+    min-height: 100vh;
+}
+
+.score {
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.paddle {
+    width: 1%;
+    background-color: white;
+    border-radius: 5%;
+}
+
+#paddle_l {
+    position: absolute;
+}
+
+#paddle_r {
+    position: absolute;
+}
+
+#ball {
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    animation: change_ball_color 1s linear 0s infinite;
+}
+
+@keyframes change_ball_color {
+    0% {background-color: green;}
+    25% {background-color: limegreen;}
+    50% {background-color: lightgreen;}
+    75% {background-color: limegreen;}
+    100% {background-color: green;}
+}
+
+#ball_speed {
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    left: 40%;
+}
+
+#bounce_angle {
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    left: 39.7%;
+    top: 5%;
+}
